@@ -1,0 +1,141 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A num
+01B-01E tensao_boost
+01F-020 temp_amb
+021-024 erro
+025-028 u_i
+029-02C u_p
+02D-030 u_u
+031-032 duty
+033-036 REF
+037     imprimir
+038-039 botao1
+03A-03B botao2
+03C     MAIN.@SCRATCH1
+03D     @delay_ms1.P1
+03E-041 @FLT.P1
+03E-041 @SFTOI.P2
+03E-041 @FTOSD.P3
+03E     timer.@SCRATCH1
+03F     timer.@SCRATCH2
+040-041 @ITOF.P1
+040     timer.@SCRATCH3
+041     timer.@SCRATCH4
+042-045 @MULFF.P1
+042-045 @ADDFF.P2
+042-045 @DTOF.P3
+042-045 @FLT.P4
+042-045 @DIVFF.P5
+042     @FTOSD.@SCRATCH1
+046-049 @ADDFF.P1
+046-049 @DIVFF.P2
+046-049 @MULFF.P3
+046     @FLT.@SCRATCH1
+047     @FLT.@SCRATCH2
+04A     @MULFF.@SCRATCH1
+04A     @ADDFF.@SCRATCH1
+04A     @DIVFF.@SCRATCH1
+04B     @MULFF.@SCRATCH2
+04B     @ADDFF.@SCRATCH2
+04B     @DIVFF.@SCRATCH2
+04C     @MULFF.@SCRATCH3
+04C     @ADDFF.@SCRATCH3
+04C     @DIVFF.@SCRATCH3
+04D     @ADDFF.@SCRATCH4
+04D     @DIVFF.@SCRATCH4
+04E     @ADDFF.@SCRATCH5
+04E     @DIVFF.@SCRATCH5
+04F     @ADDFF.@SCRATCH6
+04F     @DIVFF.@SCRATCH6
+050     @ADDFF.@SCRATCH7
+051     @ADDFF.@SCRATCH8
+F6D.3   USBEN
+F6F.3   UTRDIS
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000A96  @delay_ms1
+0006BE  timer
+0000AE  @ITOF
+0000E4  @MULFF
+0001D6  @FTOSD
+000216  @DTOF
+00024A  @ADDFF
+0004B4  @FLT
+00052A  @SFTOI
+000562  @DIVFF
+000A44  setup
+000ABE  MAIN
+000ABE  @cinit1
+000B1E  @cinit2
+
+Project Directory:
+    C:\Users\Francisco Marcolino\OneDrive\eletroboost\
+
+Project Files:
+    codigo1.c                                               [26-mai-17 09:38  CRC=B81D03EF]
+    ..\..\..\..\Program Files (x86)\PICC\devices\18f2550.h  [30-nov-12 18:59  CRC=68D6E861]
+
+Source signature=89CAD4B1
+
+Units:
+    codigo1 (main)
+
+Compiler Settings:
+    Processor:      PIC18F2550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      codigo1.err
+    Ext Symbols: codigo1.esym
+    INHX32:      codigo1.hex
+    Symbols:     codigo1.sym
+    List:        codigo1.lst
+    Debug/COFF:  codigo1.cof
+    Project:     codigo1.PJT
+    Call Tree:   codigo1.tre
+    Statistics:  codigo1.STA
